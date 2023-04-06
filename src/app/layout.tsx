@@ -1,3 +1,4 @@
+import Navbar from '@/components/navbar';
 import './globals.css';
 
 import { Inter } from 'next/font/google';
@@ -15,8 +16,9 @@ export type LayoutProps = {
 
 export default function RootLayout({ children }: LayoutProps) {
   return (
-    <html lang="en">
-      <body className={inter.className}>
+    <html lang="en" className={inter.className}>
+      <body className='bg-zinc-200 text-zinc-700 flex flex-col h-screen w-full grow'>
+        <Navbar />
         {children}
       </body>
     </html>
