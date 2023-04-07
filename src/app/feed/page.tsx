@@ -1,4 +1,4 @@
-import PostListItem, { Post } from "@/components/post/post-list-item";
+import PostListItem, { Post } from "@/components/post-list-item";
 
 async function getPosts() {
   const res = await fetch('https://jsonplaceholder.typicode.com/posts', {
